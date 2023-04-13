@@ -1,5 +1,6 @@
 import { useSelector, useDispatch} from "react-redux";
 import { deleteTodo } from "../redux/reducer";
+import { ListContainer } from "./StyledComponents";
 
 const ToDoList = () => {
 
@@ -13,6 +14,7 @@ const ToDoList = () => {
 
   return (
     <>
+    <ListContainer>
       {
         todos.map(Todo => {
           const { todo, id} = Todo;
@@ -24,6 +26,7 @@ const ToDoList = () => {
           )
         })
       }
+    </ListContainer>
     </>
   );
 };
