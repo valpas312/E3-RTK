@@ -48,6 +48,11 @@ export const FormContainer = styled.form`
     button:hover {
         background-color: #333;
     }
+
+    @media (max-width: 768px) {
+        width: 100vw;
+        box-shadow: none;
+    }
 `;
 
 export const ListContainer = styled.div`
@@ -70,6 +75,7 @@ export const ListContainer = styled.div`
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding: 0 20px;
     }
 
@@ -90,5 +96,10 @@ export const ListContainer = styled.div`
 
     button:hover {
         background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+        width: 100vw;
+        box-shadow: none;
     }
 `;
